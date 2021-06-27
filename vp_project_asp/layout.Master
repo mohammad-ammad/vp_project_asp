@@ -1,0 +1,67 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="layout.master.cs" Inherits="vp_project_asp.layout" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Vaccination Portal</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="container">
+                 <!-- logo  -->
+               <nav class="logo">
+                  <img src="img/logo.png" alt="">
+               </nav>
+        <!-- navbar  -->
+              <nav class="nav-bar">
+                 <ul>
+                   <li><a href="home.aspx">Home</a></li>
+                   <li><a href="registration.aspx">Registration</a></li>
+                   <li><a href="status.aspx">Status</a></li>
+                </ul>
+               </nav>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+             <footer class="footer-upper">
+              <div class="row">
+                  <div class="col-md-4">
+                      <h3>Vaccination Portal</h3>
+                      <p>A key issue as we move closer to ending the pandemic is determining more precisely how long people exposed to SARS-CoV-2,.</p>
+                  </div>
+                  <div class="col-md-4">
+                      <h3>Quick Links</h3>
+                      <ul>
+                          <li><a href="home.aspx">Home</a></li>
+                          <li><a href="registration.aspx">Registration</a></li>
+                          <li><a href="status.aspx">Status</a></li>
+                      </ul>
+                  </div>
+                  <div class="col-md-4 icon">
+                      <h3>Follow Us</h3>
+                      <i class="fab fa-facebook-square"></i>
+                      <i class="fab fa-instagram"></i>
+                      <i class="fab fa-linkedin"></i>
+                  </div>
+              </div>
+          </footer>
+              <!-- footer lower  -->
+          <footer class="footer-lower">
+              <p>All rights are reserved &copy; 2021</p>
+          </footer>
+        </div>
+    </form>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
